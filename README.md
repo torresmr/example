@@ -1,24 +1,8 @@
-<p align="center"><a href="https://github.com/javedali99/git-tutorial"><img alt="Learning Lab bot" src="https://user-images.githubusercontent.com/16547949/62085817-83232580-b22a-11e9-8693-7c54205b04e5.png"></a></p>
-
 <h1 align="center">Hands-on Tutorial: Introduction to Git and GitHub </h1>
-
-<h3 align="center">
-    <a href="https://javedali99.github.io/git-tutorial/slides.html">\U0001f5a5\ufe0f Slides </a>
-    <a> | </a>
-    <a href="https://www.javedali.net/post/intro-git-github/">\U0001f310 Blogpost</a>
-    <a> | </a>
-    <a href="https://www.javedali.net/post/23-advance-git-commands-shortcuts/">\U0001f310 23 Advanced Git Techniques</a>
-    <br>
-</h3>
-
----
-<!--
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://jarednielsen.com/learn-git-fork-pull-request/)
--->
 
 This tutorial aims to provide an in-depth introduction to version control systems using `git` and `GitHub`. It is designed to equip you with the necessary skills to effectively use these tools, regardless of your experience level.
 
-We will use the \u2328\ufe0f Command Line Interface (CLI) (i.e. `Bash` for Windows and `Terminal` in MacOS) to perform essential command line techniques. In case you want to learn how to use `git` with [GitHub Desktop](https://desktop.github.com/), please refer to the slides available [here](https://javedali99.github.io/git-tutorial/slides.html).
+We will use the Command Line Interface (CLI) (i.e. `Bash` for Windows and `Terminal` in Linux and MacOS) to perform essential command line techniques.
 
 
 ## Git: An Overview
@@ -27,36 +11,22 @@ We will use the \u2328\ufe0f Command Line Interface (CLI) (i.e. `Bash` for Windo
 
 All files in a project directory, or a `repository` (repo for short), are tracked by a hidden `.git` file located in the root directory. You can create a new repository on your local machine by navigating to the directory where you want your project to live and typing the `git init` command. 
 
-Git allows you to roll back to a previous snapshot of your project called a `commit`.  When you want to take a snapshot of your work, you'll need to `add` the changes to your files to a **staging area**.  You can think of a staging area (literally) like a staging area.  The changes that you want to be included in your next snapshot need to be put on stage in order to be captured by the `commit`.
-
-Each commit requires a message to describe what has changed. These commit messages should be brief but descriptive, allowing you (or others) to understand what has changed without having to read the code. 
-
-Here is a visual representation of the process:
-
-![local git process](imgs/local-git-process.png)
-
 <br>
 
-Let's delve into some common `git` commands. This is not a complete list \u2014 for a more comprehensive look at the `git` commands, check the [official Git documentation](https://git-scm.com/docs):
-
+Let's delve into some common `git` commands. 
 
 | Command                            | Description                                                                                                                                                                    |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `git init`                         | Initializes a new Git repository in the current directory. This creates a hidden `.git` directory which is used to track changes. This command is typically only used once at the start of a project. |
-| `git status`                       | Provides information about any untracked files, changes not yet staged for commit, and changes that are staged but not yet committed. This command helps you understand the state of your project at any given time. |
-| `git add FILE-NAME` or `git add .` | The `git add` command adds a file or all files (`.`) to the staging area. This signals to Git that these changes should be included in the next commit. |
+| `git init`                         | Initializes a new Git repository in the current directory. This creates a hidden `.git` directory which is used to track changes. |
+| `git status`                       | Provides information about any untracked files. |
+| `git add FILE-NAME` or `git add .` | The `git add` command adds a file or all files (`.`) to the staging area. |
 | `git commit -m "Description"`      | This command takes a snapshot of all changes in the staging area and saves them as a new commit in the repository. The `-m` flag is followed by a message that should briefly describe the changes made in this commit. |
 
 The process described above happens on your local machine. This is perfect for solo projects, but if you want to collaborate with others or create a backup of your code, you'll need to use **GitHub**.
 
 ## GitHub: An Overview
 
-GitHub is a platform that allows developers to host and share their Git repositories online. It's a fantastic tool for collaboration, allowing multiple developers to work on the same project simultaneously without overwriting each other's changes. It's also a great way to backup your code \u2014 should your local machine ever fail, you can simply clone your repository from GitHub and continue where you left off. In addition to providing a great UI on top of a server that hosts your repositories, GitHub has a number of additional features such as issue tracking, wiki pages, and notifications that make it a great collaboration tool.  
-
-GitHub repositories are just like Git repositories, but with some added features. For example, GitHub allows for `pull requests`, where one developer can propose changes to a project that another developer can review and approve. GitHub also includes tools for project management, such as issue tracking and project boards.
-
-One key thing to remember is that GitHub doesn't just store a copy of your code files \u2014 it stores the **entire history** of changes to the files, thanks to Git. This allows other developers to view the files at an earlier point in time, or even revert the entire project back to an earlier state.
-
+GitHub is a platform that allows developers to host and share their Git repositories online. It's a fantastic tool for collaboration, allowing multiple developers to work on the same project simultaneously without overwriting each other's changes. GitHub repositories are just like Git repositories, but with some added features. For example, GitHub allows for `pull requests`, where one developer can propose changes to a project that another developer can review and approve. GitHub also includes tools for project management, such as issue tracking and project boards.
 
 
 ## To Get Started with Git and GitHub
