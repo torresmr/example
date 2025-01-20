@@ -35,11 +35,12 @@ Here's a step-by-step guide to get you started with Git and GitHub:
 
 1. **Create a GitHub Account**: Visit [github.com](https://github.com/) and register for an account.
 
-2. **Install Git**: Depending on your operating system, download and install Git using one of the following methods:
+2. **Install Git**: The Olin 124 computer labs are already installed with Git. Just for your information, you can go to step 3. Depending on your operating system, download and install Git using one of the following methods:
     - Windows users: Download and install [Git for Windows](https://gitforwindows.org/).
     - Mac users: Download and install [Git for MacOS](https://git-scm.com/download/mac) or use Homebrew by typing `brew install git` in the Terminal.
+    - Linux users: Download and install `sudo apt install git'
 
-3. **Configure Git**: Once Git is installed, you'll need to configure it with your name and email address. This information is used to track who made each commit in a project. Open your Terminal or Command Prompt and type the following commands, replacing "FirstName LastName" and "email@example.com" with your name and email:
+3. **Configure Git**: Once Git is installed, you'll need to configure it with your name and email address. This information is used to track who made each commit in a project. Open your Terminal or Command Prompt and type the following commands, replacing "FirstName LastName" and "email@example.com" with your Whitman name and email:
 
     ```bash
     # Enter YOUR NAME to set your name
@@ -49,9 +50,6 @@ Here's a step-by-step guide to get you started with Git and GitHub:
     git config --global user.email "email@example.com"
     ```
     You can verify that the configuration worked by typing `git config --list`. The output should include your name and email. Ensure you use the email associated with your GitHub account. This is important because Git will use this information when you work on a project.
-
-
-> See [this article](https://help.github.com/articles/set-up-git/) for more information on setting up GitHub.
 
 4. **Set up SSH Keys**: SSH (Secure Shell) keys are a way to identify yourself to GitHub without needing to provide your username and password every time. They are a pair of encryption keys that work together to secure your connection. The public key is stored on GitHub and the private key is stored on your local machine. 
 
@@ -67,15 +65,10 @@ Here's a step-by-step guide to get you started with Git and GitHub:
     
 - **Test your SSH connection:** Go back to your Terminal or Command Prompt and type `ssh -T git@github.com`. If you see a message saying `"You've successfully authenticated, but GitHub does not provide shell access"`, then everything is working!
 
-> For more information on SSH keys, check out the [GitHub guide for SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) or the [Software Carpentry guide](https://swcarpentry.github.io/git-novice/07-github/index.html#3-ssh-background-and-setup).
 
 ## Workflow Example
 
-Here is _one_ example of a workflow you may choose when working on a project. Let's imagine that there's a repository online that you want to use as a starting point for a project. First, you may want **your own cloud copy** of a repository on GitHub. In order to start working on the files, you'll need to get them on your computer (they're still only in the cloud). To do so, you will clone **your repository** to your machine. This will create a local copy of the files **as well as their entire history** on your local machine. We'll use the terminal to clone the repository, but we need to get some information about it first. To get the URL location of the repository, click the **Clone or Download** button, then click on the clipboard icon to copy the URL to your clipboard:
-
-<!--
-![clone button on GitHub](imgs/clone.png)
--->
+Here is _one_ example of a workflow you may choose when working on a project. Let's imagine that there's a repository online that you want to use as a starting point for a project. First, you may want **your own cloud copy** of a repository on GitHub. In order to start working on the files, you'll need to get them on your computer. To do so, you will clone **your repository** to your machine. This will create a local copy of the files **as well as their entire history** on your local machine. We'll use the terminal to clone the repository, but we need to get some information about it first. To get the URL location of the repository, click the **Code** button, then click on the clipboard icon to copy the SSH URL to your clipboard:
 
 Then, on your terminal, you could use the `git clone` command described below.  Here is a diagram of the full process:
 
@@ -90,7 +83,7 @@ Now that we've covered the basics of Git and GitHub, let's take a look at how th
 
 Let's imagine you find a repository on GitHub that you'd like to contribute to. The first step is to create your own copy of the repository on GitHub, known as a **fork**. This gives you a version of the project that you have full control over, allowing you to make changes without affecting the original project.
 
-Once you have forked the repository, you'll want to **clone** it to your local machine. This creates a copy of the project files on your computer, allowing you to work on the project even when you're offline. To clone a repository, navigate to the main page of the repository on GitHub, click the "Clone or download" button, and copy the URL that appears. Then, open your Terminal or Command Prompt, navigate to the directory where you want the project to live, and type `git clone`, followed by the URL you copied.
+Once you have forked the repository, you'll want to **clone** it to your local machine. This creates a copy of the project files on your computer, allowing you to work on the project even when you're offline. To clone a repository, navigate to the main page of the repository on GitHub, click the **Code** button, then click on the clipboard icon to copy the SSH URL to your clipboard. Then, open your Terminal or Command Prompt, navigate to the directory where you want the project to live, and type `git clone URL`.
 
 Now that you have a local copy of the project, you can start making changes. Remember to commit your changes frequently with clear, descriptive commit messages. This will make it easier for others to understand what you've done.
 
