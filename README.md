@@ -1,5 +1,7 @@
 <h1 align="center">Hands-on Tutorial: Introduction to Git and GitHub </h1>
 
+Hello everybody
+
 This tutorial aims to provide an in-depth introduction to version control systems using `git` and `GitHub`. It is designed to equip you with the necessary skills to effectively use these tools, regardless of your experience level.
 
 We will use the Command Line Interface (CLI) (i.e. `Bash` for Windows and `Terminal` in Linux and MacOS) to perform essential command line techniques.
