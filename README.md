@@ -253,3 +253,6 @@ git push (REMOTE) (BRANCH)
 ```bash
 git pull REMOTE
 ```
+## Acknowledges
+Dr. Javed Ali
+
