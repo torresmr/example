@@ -72,13 +72,7 @@ Here's a step-by-step guide to get you started with Git and GitHub:
 
 Here is _one_ example of a workflow you may choose when working on a project. Let's imagine that there's a repository online that you want to use as a starting point for a project. First, you may want **your own cloud copy** of a repository on GitHub. In order to start working on the files, you'll need to get them on your computer. To do so, you will clone **your repository** to your machine. This will create a local copy of the files **as well as their entire history** on your local machine. We'll use the terminal to clone the repository, but we need to get some information about it first. To get the URL location of the repository, click the **Code** button, then click on the clipboard icon to copy the SSH URL to your clipboard:
 
-Then, on your terminal, you could use the `git clone` command described below.  Here is a diagram of the full process:
-
-![git with github diagram](imgs/full-git-process.png)
-
 <br>
-
-
 ## Collaborating with Git and GitHub
 
 Now that we've covered the basics of Git and GitHub, let's take a look at how they can be used for collaboration.
@@ -105,7 +99,7 @@ Here are some additional `git` commands that allow you to interact easily with G
 
 
 
-## \U0001f5a5\ufe0f Git Commands Cheat Sheet
+## Git Commands Cheat Sheet
 
 **Set configuration values for your username and email** 
 
